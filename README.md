@@ -11,7 +11,7 @@ To apply CSS to an HTML document, you have three main options:
 1. **Inline CSS**: Apply styles directly to HTML elements using the `style` attribute.
 
    ```html
-   <p style="color: red; font-size: 16px;">Hello, CSS!</p>
+   <p style="color: red; font-size: 16px;">Hello, CSS!</p>```
    
 ```html <!DOCTYPE html>
 <html>
