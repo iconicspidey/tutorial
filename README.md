@@ -11,24 +11,10 @@ To apply CSS to an HTML document, you have three main options:
 1. **Inline CSS**: Apply styles directly to HTML elements using the `style` attribute.
 
    ```html
-   <p style="color: red; font-size: 16px;">Hello, CSS!</p>```
-   
-```html <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        p {
-            color: red;
-            font-size: 16px;
-        }
-    </style>
-</head>
-<body>
-    <p>Hello, CSS!</p>
-</body>
-</html>
-## Internal CSS: Define styles within a <style> tag in the <head> section of your HTML document.
-```html <!DOCTYPE html>
+   <p style="color: red; font-size: 16px;">Hello, CSS!</p>
+
+```
+html <!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -43,9 +29,27 @@ To apply CSS to an HTML document, you have three main options:
 </body>
 </html>
 
-### External CSS: Create a separate CSS file and link it to your HTML document using the <link> tag.
+##Internal CSS: Define styles within a <style> tag in the <head> section of your HTML document.
 
-```html <!DOCTYPE html>
+```
+html <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello, CSS!</p>
+</body>
+</html>
+    ### External CSS: Create a separate CSS file and link it to your HTML document using the <link> tag.
+
+```html
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -55,8 +59,9 @@ To apply CSS to an HTML document, you have three main options:
 </body>
 </html>
 
-In `styles.css`:
-```css p {
+       ##In `styles.css`:
+```css
+p {
     color: red;
     font-size: 16px;
 }
@@ -65,12 +70,17 @@ p {
 }
 ###CSS Selectors
 ##CSS selectors are used to target HTML elements for styling. Here are a few commonly used selectors:
-```css p {
+```css
+p {
     color: blue;
 }
-##Class Selector: Targets elements with a specific class attribute.
-```html <p class="intro">This is a paragraph.</p>
-```css .intro {
+
+     ##Class Selector: Targets elements with a specific class attribute.
+```html
+   <p class="intro">This is a paragraph.</p>
+
+```css
+.intro {
     font-size: 18px;
 }
 ## ID Selector: Targets an element with a specific ID attribute.
@@ -78,7 +88,9 @@ p {
  ```css #main-paragraph {
     font-weight: bold;
 }
+
 #CSS Properties
+
 ##CSS properties define how HTML elements are displayed. Here are a few common properties:
 
 color: Sets the text color.
@@ -90,6 +102,8 @@ border: Sets the border properties.
 width, height: Defines the dimensions of an element.
 #Example
 ##3Let's combine what we've learned into a simple example:
+
+
 ```html <!DOCTYPE html>
 <html>
 <head>
